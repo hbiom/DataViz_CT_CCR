@@ -31,6 +31,13 @@ CT_CCR
 │    utils.py
 │
 │───Task10_Colon
+│   │
+│   │   dataset.json
+│   │
+│   └────imagesTr
+│   │
+│   │
+│   └────labelsTr
 │
 │───img
 
