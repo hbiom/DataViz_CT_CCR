@@ -60,8 +60,8 @@ CT_CCR
 
 
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/slices_graph.png?raw=true)
+![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_tumors.png?raw=true)
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image.png?raw=true)
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_contour_show_tumor_only.png?raw=true)
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_mask_show_tumor_only.png?raw=true)
-![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_tumor.png?raw=true)
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/tumor_all.png?raw=true)
