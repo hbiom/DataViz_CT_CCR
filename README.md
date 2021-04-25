@@ -17,17 +17,17 @@ More information and link to dowload this dataset can be found [Here](https://dr
 ## Requirements
 
 '''
-imageio==2.9.0
-matplotlib==3.3.3
-nibabel==3.2.1
-numpy==1.19.5
-opencv-python==4.5.1.48
-openpyxl==3.0.5
-pandas==1.2.0
-scikit-image==0.18.1
-scipy==1.6.2
-seaborn==0.11.1
-SimpleITK==2.0.2
+*imageio==2.9.0
+*matplotlib==3.3.3
+*nibabel==3.2.1
+*numpy==1.19.5
+*opencv-python==4.5.1.48
+*openpyxl==3.0.5
+*pandas==1.2.0
+*scikit-image==0.18.1
+*scipy==1.6.2
+*seaborn==0.11.1
+*SimpleITK==2.0.2
 '''
 
 
