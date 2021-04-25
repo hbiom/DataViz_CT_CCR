@@ -1,6 +1,7 @@
 
 
-./img
+.*
+!/.gitignore
 
 
 ./Task10_Colon/imagesTr/*
