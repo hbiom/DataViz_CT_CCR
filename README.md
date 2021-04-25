@@ -16,7 +16,7 @@ More information and link to dowload this dataset can be found [Here](https://dr
 
 ## Requirements
 
-'''
+```
 - imageio==2.9.0
 - matplotlib==3.3.3
 - nibabel==3.2.1
@@ -28,7 +28,7 @@ More information and link to dowload this dataset can be found [Here](https://dr
 - scipy==1.6.2
 - seaborn==0.11.1
 - SimpleITK==2.0.2
-'''
+```
 
 
 ## Repository
