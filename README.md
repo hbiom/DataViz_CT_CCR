@@ -9,14 +9,14 @@ Utilities to produce data vizualisation figures on nifti file (modality CT scan)
 The dataset can be used for visualization, semantic/instance segmentation and object detection.
 
 
-This dataset was initialy used for a [Medical Segmentation Decathlon](http://medicaldecathlon.com/#organisers) for segmentation task.
+This dataset was initialy used for a [Medical Segmentation Decathlon](http://medicaldecathlon.com/) for segmentation task.
 
 More information and link to dowload this dataset can be found [Here](https://drive.google.com/drive/folders/1HqEgzS8BV2c7xYNrZdEAnrHk7osJJ--2)
 
 
 ## Requirements
 
-
+---
 *imageio==2.9.0
 *matplotlib==3.3.3
 *nibabel==3.2.1
@@ -28,9 +28,12 @@ More information and link to dowload this dataset can be found [Here](https://dr
 *scipy==1.6.2
 *seaborn==0.11.1
 *SimpleITK==2.0.2
+---
 
 
-repository should be organised as below with image and corresponding mask (must have the same name) in imagesTR and labels folder respectively.
+## Repository
+
+Projet repository should be organised as below with image and corresponding mask (must have the same name) in imagesTR and labels folder respectively.
 
 ```
 CT_CCR
