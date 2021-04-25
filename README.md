@@ -1,13 +1,13 @@
 # DataViz_CT_CCR
 
 
-## Dataset
-
-Utilities to produce data vizualisation figures on nifti file (modality CT scan) 3D slices of Colorectal cancer dataset with corresponding mask on
+Utilities to produce data vizualisation figures on nifti file (modality CT scan) along 3D slices of Colorectal cancer (with corresponding tumor mask) on
 126 patients.
 
 The dataset can be used for visualization, semantic/instance segmentation and object detection.
 
+
+## Dataset
 
 This dataset was initialy used for a [Medical Segmentation Decathlon](http://medicaldecathlon.com/) for segmentation task.
 
@@ -48,10 +48,9 @@ CT_CCR
 │
 │───Task10_Colon
 │   │
-│   │   dataset.json
+│   │dataset.json
 │   │
 │   └────imagesTr
-│   │
 │   │
 │   └────labelsTr
 │
@@ -60,4 +59,9 @@ CT_CCR
 ```
 
 
+![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/slices_graph.png?raw=true)
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image.png?raw=true)
+![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_contour_show_tumor_only.png?raw=true)
+![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_mask_show_tumor_only.png?raw=true)
+![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_tumor.png?raw=true)
+![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/tumor_all.png?raw=true)
