@@ -106,17 +106,31 @@ We can see the entire tumor shape by just overlapping the mask on the images :
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_tumors.png?raw=true)
 
 
-Okay, as we can see, the tumor seem to be appeard around slices 57 finish slices 89. As this point, we know where the tumor is, but we migth want to have a better
+Okay, the tumor seem to be appeard around slices 57 and finish slices 89. As this point, we know where the tumor is, but we migth want to have a better
 look on it. We can set the argument of plot_image show_tumor_only = True to only display images containing tumors from the first slice to the last one with equidistant
-intermediary slices.
+intermediary slices. This way we can see the global shape of the tumor along all the slices.
 
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_mask_show_tumor_only.png?raw=true)
 
-Similarly, We can see the extract and visualize the countour of the tumor mask and overlapping it on the images :
+
+We migth want to spot the tumor other way. for instance, We can see the extract and visualize the countour of the tumor mask and overlapping it on the images :
 
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_contour_show_tumor_only.png?raw=true)
 
-Lasty, we could just want to see the bounding box containing the tumor:
+Lasty, we can retrive bounding box coordinate with the mask and plot it on the images.
+
+![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_bbounding_show_tumor_only.png?raw=true)
+
+
+
+
+
+
+
+
+
+
+last figure :
 
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/tumor_all.png?raw=true)
 
