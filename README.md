@@ -1,10 +1,10 @@
 # DataViz_CT_CCR
 
 
-Utilities to produce data vizualisation figures on nifti file (modality CT scan) along 3D slices of Colorectal cancer (with corresponding tumor mask) on
+Utilities to produce data vizualisation figures on nifti file (modality CT scan) along 3D slices of Colorectal cancer (with corresponding binary tumor mask) on
 126 patients.
 
-The dataset can be used for visualization, semantic/instance segmentation and object detection.
+The dataset can be used for semantic/instance segmentation and object detectionas as well.
 
 
 ## Dataset
@@ -59,9 +59,66 @@ CT_CCR
 ```
 
 
-![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/slices_graph.png?raw=true)
+
+Medical images such as MRI or CT scan are 3D object often difficult to visualize in publication. One solution is to creates
+3D representation with all 2D slices. Another solution describe adressed here, is to plot selected 2D slices along all images stack
+and corresponding tumors.
+
+First, we need if there no problem in the dataset including :
+
+- Do all images/masks are in the same size ?
+- Do all images have corresponding mask ?
+- Are mask binary ? (0 : pixel do not contained tumor , 1 : pixel containing tumor)
+
+
+(Here we do not adressed issues about image preprocessing including intensity normalisation, noise and contrast ...).
+
+
+The job is quite easy on this dataset as all images are 512/512 pixels size with corresponding binary mask. But do we have the same number of images per
+patients ? And do each patient have equal number of image/mask with and without tumor ?
+
+Lets see that, We just need to quantify the number of mask completely black (= no tumors). For futher purposed, we also create a function returning the index
+of images/mask with tumors.
+
+
+
+As we see of these graph, most of patient have around 100 slices, but only 10% of total images actually contain a tumor. I guess radiologist have to scan the entire
+abdominal region to find the tumor resulting in this low number. That would be a problem to train a deep learning algorithm for segmentation/clasification as the number
+of positive/negative class should be similar.
+
+In ours visualization task, this is just a fact for us to notice.
+
+
+To have a globak idea of the aspect of 3D object, We first need to visualize individual 2D images from the first slice to the last one with equidistance
+intermediary slices (We set the max number of images displayed by 18). we used the function plot_image on patient 0050_Colon.
+
+We obtain the images below :
+
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_tumors.png?raw=true)
+
+
+We can see the scan beging below the thigh and up to the lungs covering all abdominal region. The colorectal tumor is somewere between this slices. We can spot it
+by ploting the correspong tumor mask. To do so we can used the argument dislay_mode of our custom plot_image function.
+
+We can see the entire tumor shape by just overlapping the mask on the images :
+
+![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/slices_graph.png?raw=true)
+
+
+
+
+
+
+
+
+Similarly, We can see the extract and visualize the countour of the tumor mask and overlapping it on the images :
+
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image.png?raw=true)
+
+Lasty, we could just want to see the bounding box containing the tumor:
+
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_contour_show_tumor_only.png?raw=true)
+
+
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_mask_show_tumor_only.png?raw=true)
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/tumor_all.png?raw=true)
