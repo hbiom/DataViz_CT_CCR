@@ -122,9 +122,23 @@ Lasty, we can retrive bounding box coordinates with the mask and plot it on corr
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_bbounding_show_tumor_only.png?raw=true)
 
 
-To finish, we migth want to focus on one tumor slice, most likely the one where the tumors is the biggest (correpsonding to the mask with the most positive event).
-We can then plot the images with the bounding box, with the corresponding cropped images around the tumor and finally just the tumors. We obtain the image below :
+To finish, we migth want to focus on one tumor slice, most likely the one where the tumors is the biggest. To spot it, we just need to find the the mask with
+the most positive events. We can then plot the images with the bounding box, with the corresponding cropped images around the tumor and finally just the tumors.
+We obtain the image below :
 
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/tumor_all.png?raw=true)
+
+
+There is much more we can do to visualize medical images not covered here like 3D reconstitution and image preprocessing, as well as the development of advanced
+techniques and amazing library.
+
+Still, visualization of the dataset a good start before implementing complex machine learning solutions.
+
+
+Thanks for reading!
+
+
+Feeback are welcome and error signaling will be appreciated.
+
 
 
