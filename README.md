@@ -80,6 +80,7 @@ patients ? And do each patient have equal number of image/mask with and without 
 Lets see that, We just need to quantify the number of mask completely black (= no tumors). For futher purposed, we also create a function returning the index
 of images/mask with tumors.
 
+![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/slices_graph.png?raw=true)
 
 
 As we see of these graph, most of patient have around 100 slices, but only 10% of total images actually contain a tumor. I guess radiologist have to scan the entire
@@ -89,36 +90,34 @@ of positive/negative class should be similar.
 In ours visualization task, this is just a fact for us to notice.
 
 
-To have a globak idea of the aspect of 3D object, We first need to visualize individual 2D images from the first slice to the last one with equidistance
+To have a global idea of the aspect of 3D object, We first need to visualize individual 2D images from the first slice to the last one with equidistant
 intermediary slices (We set the max number of images displayed by 18). we used the function plot_image on patient 0050_Colon.
 
 We obtain the images below :
 
-![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_tumors.png?raw=true)
+![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image.png?raw=true)
 
 
 We can see the scan beging below the thigh and up to the lungs covering all abdominal region. The colorectal tumor is somewere between this slices. We can spot it
-by ploting the correspong tumor mask. To do so we can used the argument dislay_mode of our custom plot_image function.
+by ploting the correspong tumor mask. To do so we can used the argument dislay_mode ='mask' of our custom plot_image function to see tumor.
 
 We can see the entire tumor shape by just overlapping the mask on the images :
 
-![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/slices_graph.png?raw=true)
+![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_tumors.png?raw=true)
 
 
+Okay, as we can see, the tumor seem to be appeard around slices 57 finish slices 89. As this point, we know where the tumor is, but we migth want to have a better
+look on it. We can set the argument of plot_image show_tumor_only = True to only display images containing tumors from the first slice to the last one with equidistant
+intermediary slices.
 
-
-
-
-
+![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_mask_show_tumor_only.png?raw=true)
 
 Similarly, We can see the extract and visualize the countour of the tumor mask and overlapping it on the images :
 
-![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image.png?raw=true)
+![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_contour_show_tumor_only.png?raw=true)
 
 Lasty, we could just want to see the bounding box containing the tumor:
 
-![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_contour_show_tumor_only.png?raw=true)
-
-
-![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_mask_show_tumor_only.png?raw=true)
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/tumor_all.png?raw=true)
+
+
