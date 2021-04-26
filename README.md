@@ -117,20 +117,13 @@ We migth want to spot the tumor other way. for instance, We can see the extract 
 
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_contour_show_tumor_only.png?raw=true)
 
-Lasty, we can retrive bounding box coordinate with the mask and plot it on the images.
+Lasty, we can retrive bounding box coordinates with the mask and plot it on corresponding images.
 
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_bbounding_show_tumor_only.png?raw=true)
 
 
-
-
-
-
-
-
-
-
-last figure :
+To finish, we migth want to focus on one tumor slice, most likely the one where the tumors is the biggest (correpsonding to the mask with the most positive event).
+We can then plot the images with the bounding box, with the corresponding cropped images around the tumor and finally just the tumors. We obtain the image below :
 
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/tumor_all.png?raw=true)
 
