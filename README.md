@@ -1,7 +1,7 @@
 # DataViz_CT_CCR
 
 
-Utilities to produce data vizualisation figures on nifti file (modality computerized tomography CT scan) along 3D slices of Colorectal cancer (with corresponding binary tumor mask) on
+Utilities to produce data vizualisation figures on nifti file (modality **computerized tomography** CT scan) along 3D slices of **Colorectal cancer** (with corresponding binary tumor mask) on
 126 patients.
 
 The dataset can be used for semantic/instance segmentation and object detectionas as well.
@@ -58,10 +58,11 @@ CT_CCR
 
 ```
 
+## Datavizualisation on medical images
 
 
 Medical images such as MRI or CT scan are 3D object often difficult to visualize in publication. One solution is to creates
-3D representation with all 2D slices. Another solution describe adressed here, is to plot selected 2D slices along all images stack
+3D representation with all 2D slices. Another solution adressed here, is to plot selected 2D slices along all images stack
 and corresponding tumors.
 
 First, we need if there no problem in the dataset including :
@@ -74,8 +75,8 @@ First, we need if there no problem in the dataset including :
 (Here we do not adressed issues about image preprocessing including intensity normalisation, noise and contrast ...).
 
 
-The job is quite easy on this dataset as all images are 512/512 pixels size with corresponding binary mask. But do we have the same number of images per
-patients ? And do each patient have equal number of image/mask with and without tumor ?
+The job is quite easy on this dataset as all images already have consistent 512/512 pixels size with corresponding binary mask. But do we have the same number
+of images per patients ? And do each patient have equal number of image/mask with and without tumor ?
 
 Lets see that, We just need to quantify the number of mask completely black (= no tumors). For futher purposed, we also create a function returning the index
 of images/mask with tumors.
@@ -91,7 +92,7 @@ In ours visualization task, this is just a fact for us to notice.
 
 
 To have a global idea of the aspect of 3D object, We first need to visualize individual 2D images from the first slice to the last one with equidistant
-intermediary slices (We set the max number of images displayed by 18). we used the function plot_image on patient 0050_Colon.
+intermediary slices (We set the max number of images displayed by 18). we used the function *plot_image* on patient **0050_Colon**.
 
 We obtain the images below :
 
@@ -99,7 +100,7 @@ We obtain the images below :
 
 
 We can see the scan beging below the thigh and up to the lungs covering all abdominal region. The colorectal tumor is somewere between this slices. We can spot it
-by ploting the correspong tumor mask. To do so we can used the argument dislay_mode ='mask' of our custom plot_image function to see tumor.
+by ploting the correspong tumor mask. To do so we can used the argument *dislay_mode ='mask'* of our custom plot_image function to see tumor.
 
 We can see the entire tumor shape by just overlapping the mask on the images :
 
@@ -107,8 +108,8 @@ We can see the entire tumor shape by just overlapping the mask on the images :
 
 
 Okay, the tumor seem to be appeard around slices 57 and finish slices 89. As this point, we know where the tumor is, but we migth want to have a better
-look on it. We can set the argument of plot_image show_tumor_only = True to only display images containing tumors from the first slice to the last one with equidistant
-intermediary slices. This way we can see the global shape of the tumor along all the slices.
+look on it. We can set the argument of plot_image show_tumor_only = True to only display images containing tumors from the first slice to the last one with
+equidistant intermediary slices. This way we can see the global shape of the tumor along all the slices.
 
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/plot_image_mask_show_tumor_only.png?raw=true)
 
@@ -128,20 +129,24 @@ We obtain the image below :
 
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/tumor_all.png?raw=true)
 
-bleoinzovf ozvnoenvonvoi ionor bnbzn non
+Now we can combine all graphs into a publication-like figure :
 
 
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/bilan.png?raw=true)
 
 
+**Figure 1:** Proportion of number of slices by patient (**A**) and total distribution of slices containing tumors or not from 126 patients with colorectal cancer.
+Exemple of slices of tumors delimitated by bounding boxes on one patient (**B**). Focus on the slice with the largest tumor (**C**) on patient represented in B.
+
+###Final note
 
 There is much more we can do to visualize medical images not covered here like 3D reconstitution and image preprocessing, as well as the development of advanced
-techniques and amazing library.
+techniques with amazing library.
 
-Still, visualization of the dataset a good start before implementing complex machine learning solutions.
+Still, basic visualization of the dataset is a good start before implementing complex machine learning solutions.
 
 
-Thanks for reading!
+Thanks for reading !
 
 
 Feeback and error signaling are welcome and will be appreciated.
