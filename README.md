@@ -138,7 +138,7 @@ Still, visualization of the dataset a good start before implementing complex mac
 Thanks for reading!
 
 
-Feeback are welcome and error signaling will be appreciated.
+Feeback and error signaling are welcome and will be appreciated.
 
 
 
