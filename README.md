@@ -138,7 +138,7 @@ Now we can combine all graphs into a publication-like figure :
 **Figure 1:** Proportion of number of slices by patient (**A**) and total distribution of slices containing tumors or not from 126 patients with colorectal cancer.
 Exemple of slices of tumors delimitated by bounding boxes on one patient (**B**). Focus on the slice with the largest tumor (**C**) on patient represented in B.
 
-###Final note
+## Final note
 
 There is much more we can do to visualize medical images not covered here like 3D reconstitution and image preprocessing, as well as the development of advanced
 techniques with amazing library.
