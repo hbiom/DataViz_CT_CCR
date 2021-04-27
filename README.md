@@ -1,7 +1,7 @@
 # DataViz_CT_CCR
 
 
-Utilities to produce data vizualisation figures on nifti file (modality CT scan) along 3D slices of Colorectal cancer (with corresponding binary tumor mask) on
+Utilities to produce data vizualisation figures on nifti file (modality computerized tomography CT scan) along 3D slices of Colorectal cancer (with corresponding binary tumor mask) on
 126 patients.
 
 The dataset can be used for semantic/instance segmentation and object detectionas as well.
