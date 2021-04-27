@@ -128,6 +128,12 @@ We obtain the image below :
 
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/tumor_all.png?raw=true)
 
+bleoinzovf ozvnoenvonvoi ionor bnbzn non
+
+
+![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/bilan.png?raw=true)
+
+
 
 There is much more we can do to visualize medical images not covered here like 3D reconstitution and image preprocessing, as well as the development of advanced
 techniques and amazing library.
