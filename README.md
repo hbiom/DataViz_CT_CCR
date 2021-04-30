@@ -58,7 +58,7 @@ CT_CCR
 
 ```
 
-## Datavizualisation on medical images
+## Data vizualisation on medical images
 
 
 Medical images such as MRI or CT scan are 3D objects often difficult to visualize in publications. One solution is to create
@@ -125,7 +125,7 @@ We can also retrive tumor's mask bounding box coordinates and plot it on corresp
 To finish, we might want to focus on one tumor slice, most likely the one where the tumor is the biggest. To spot it, we just need to find the the mask with
 the most positive events. We can then plot the images with the bounding box, with the corresponding cropped images around the tumor and finally just the tumor.
 
-functions to retrieve mask coordinate and cropped image come from this repository [Here](https://github.com/guillaumefrd/brain-tumor-mri-dataset)
+*functions to retrieve mask coordinate and cropped image come from this repository [Here](https://github.com/guillaumefrd/brain-tumor-mri-dataset)*
 
 
 We obtain the image below:
