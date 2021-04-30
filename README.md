@@ -156,7 +156,7 @@ Still, basic visualization of the dataset is a good start before implementing co
 Thanks for reading !
 
 
-Feeback and error signaling are welcome and will be appreciated.
+Feedback are welcome and will be appreciated.
 
 
 
