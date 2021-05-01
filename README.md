@@ -81,6 +81,8 @@ of images per patient? And do we have equal number of image/mask with and withou
 Let's see that. We just need to quantify the number of completely black masks (= no tumors). For later use, we also created a function returning the index
 of images/mask with tumors.
 
+Then we can collect number of slices with and without tumors for each patient into a dataframe and plot the data.
+
 ![alt text](https://github.com/hbiom/DataViz_CT_CCR//blob/main/img/slices_graph.png?raw=true)
 
 
