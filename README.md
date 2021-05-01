@@ -58,7 +58,7 @@ CT_CCR
 
 ```
 
-## Data vizualisation on medical images
+## Data visualization on medical images
 
 
 Medical images such as MRI or CT scan are 3D objects often difficult to visualize in publications. One solution is to create
