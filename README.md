@@ -157,7 +157,7 @@ Still, basic visualization of the dataset is a good start before implementing co
 
 Thanks for reading !
 
-Medium article with further detail can be found [Here](https://hugobottois.medium.com/medical-images-visualization-with-python-b40c2eb085f7)*
+Medium article with further detail can be found [Here](https://hugobottois.medium.com/medical-images-visualization-with-python-b40c2eb085f7)
 
 
 Feedback are welcome and will be appreciated.
