@@ -75,7 +75,7 @@ First, we need verify if there is no problem in the dataset :
 (Here we do not adressed issues about image preprocessing including intensity normalization, noise and contrast...).
 
 
-The job is quite easy on this dataset as all images already have consistent 512/512 pixels size with corresponding binary mask. But do we have the same number
+The job is quite straightforward on this dataset as all images already have consistent 512/512 pixels size with corresponding binary mask. But do we have the same number
 of images per patient? And do we have equal number of image/mask with and without tumor?
 
 Let's see that. We just need to quantify the number of completely black masks (= no tumors). For later use, we also created a function returning the index
@@ -156,6 +156,8 @@ Still, basic visualization of the dataset is a good start before implementing co
 
 
 Thanks for reading !
+
+Medium article with further detail can be found [Here](https://hugobottois.medium.com/medical-images-visualization-with-python-b40c2eb085f7)*
 
 
 Feedback are welcome and will be appreciated.
