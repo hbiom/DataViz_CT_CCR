@@ -6,7 +6,6 @@ Utilities to produce data vizualisation figures on nifti file (modality **comput
 
 The dataset can be used for semantic/instance segmentation and object detection as well.
 
-
 ## Dataset
 
 This dataset was initialy used at a [Medical Segmentation Decathlon](http://medicaldecathlon.com/) for segmentation task.
@@ -34,6 +33,9 @@ More information and link to dowload this dataset can be found [Here](https://dr
 ## Repository
 
 Project repository should be organized as below with image and corresponding mask (must have the same name) in imagesTr and labelsTr folder respectively.
+
+functions to retrieve mask coordinate and cropped image in utils.py come from this repository (https://github.com/guillaumefrd/brain-tumor-mri-dataset)
+
 
 ```
 CT_CCR
